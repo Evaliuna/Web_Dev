@@ -1,3 +1,24 @@
 td {
     border: 2px solid black;
 }
+
+/* . dot means class # means id */
+.red {
+    color: red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+#firstdiv {
+    font-size: 20px;
+}
+
+#seconddiv {
+    font-size: 15px;
+}
+
+span {
+    font-weight: bold;
+}
