@@ -147,7 +147,7 @@
 
         <!--embed another website-->
         <iframe src="https://www.wikipedia.org" width="500" height="300" title="Wikipedia"></iframe>
-        <iframe width="560" height="315"
+        <iframe width="270" height="215"
             src="https://www.youtube.com/embed/dlj2LVthUes?si=v5YAVsVO76lfvicd&amp;start=600"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -155,6 +155,67 @@
 
 
     </div>
+
+    <!--simentic tags are used for better strucutre of webpage-->
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Eva's Bookmark Manager</h2>
+            <p>Manage your bookmarks efficiently and easily.</p>
+        </section>
+
+        <section id="aboutus">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing the best bookmark management experience.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Bookmark Organization</li>
+                <li>Tagging and Categorization</li>
+                <li>Cloud Syncing</li>
+            </ul>
+        </section>
+
+        <section id="contactus">
+            <h2>Contact Us</h2>
+            <form method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label for="emailcontact">Email:</label>
+                    <input type="email" id="emailcontact" name="emailcontact" placeholder="Enter your email">
+                </div>
+                <label for="message">Message:</label>
+                <div>
+
+                    <textarea id="message" name="message" rows="4" cols="50"
+                        placeholder="Enter your message here..."></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Eva's Bookmark Manager. All rights reserved.</p>
+    </footer>
+
 </body>
 
 
