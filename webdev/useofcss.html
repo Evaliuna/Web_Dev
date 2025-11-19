@@ -66,7 +66,7 @@
 
         /* universal selector */
         * {
-            margine: 0;
+            margin: 0;
             padding: 0;
         }
 
@@ -112,9 +112,36 @@
             border: 2px solid blue;
             height: 200px;
             box-sizing: border-box;
-            /*to include padding and border in height and width */
+        }
 
+        /*to include padding and border in height and width */
+        /*specificity and cascading demonstration !important has most specificity 10000 points, classes has 10 specificity , element has 1 specificity, inline style has 1000, id has 100*/
 
+        /* here specifity of this is = 1(element)+10(special class)+10(rohan class)+10(attribute selector)+10(pseudo class)=41 */
+        a.eva.rohan-class[href]:hover {
+            background-color: lightgreen !important;
+        }
+
+        /* sizing */
+        .sizing {
+            width: 300vmin;
+            /*viewport minimum dimension*/
+            height: 150px;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 10px;
+            box-sizing: content-box;
+            font-size: 1em;
+            /*em means multiple of the font size of inheritence of parent element*/
+            font-size: 2rem;
+            /*  times the font size of root element*/
+            /* vh and vw is most imp . it means percentage of viewport hieght or width */
+            /* vmin and vmax  is based on minimum and maximum of viewport height and width */
+            display: inline-block;
+            /* display: none; */
+            /* visibility: hidden; */
+            display: flex;
+            justify-content: center;
         }
     </style><!-- internal CSS -->
 
@@ -160,6 +187,10 @@
     <div class="box box1">i am box 2</div><!--multiple class for a element is possible-->
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, deserunt.</p>
+    <div class="sizing">
+        This div is using box-sizing content-box
+    </div>
+
 </body>
 
 </html>
