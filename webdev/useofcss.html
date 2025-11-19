@@ -143,6 +143,55 @@
             display: flex;
             justify-content: center;
         }
+
+        /* positioning */
+        .parent {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            width: 400px;
+            height: 300px;
+            border: 2px solid black;
+            margin: 50px;
+            /* transform, filter, or perspective properties can also make an element appear as a positioned element */
+            /* transform: translate(0);
+            filter: invert(0); 
+            perspective: 0em; */
+
+        }
+
+        .boxi {
+            position: sticky;
+            /*based on nearest scrollable ancestor */
+            top: 10px;
+            left: 10px;
+            background-color: lightcoral;
+        }
+
+        .box2 {
+            position: relative;
+            top: 60px;
+            left: 20px;
+            background-color: lightseagreen;
+        }
+
+        .box3 {
+            position: fixed;
+            /*based on viewport */
+            bottom: 80px;
+            right: 30px;
+            background-color: lightgoldenrodyellow;
+            z-index: 2;
+        }
+
+        .box4 {
+            position: absolute;
+            top: 79px;
+            /*position absolute is based on nearest positioned ancestor */
+            right: 0px;
+            background-color: lightpink;
+            z-index: -1;
+        }
     </style><!-- internal CSS -->
 
     <link rel="stylesheet" href="styles.css"><!-- external CSS -->
@@ -189,6 +238,21 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, deserunt.</p>
     <div class="sizing">
         This div is using box-sizing content-box
+    </div>
+    <div class="parent">
+        <div class="boxi">
+            This div is using relative positioning1
+        </div>
+        <div class="box2">
+            This div is using relative positioning2
+        </div>
+        <div class="box3">
+            This div is using relative positioning3
+        </div>
+        <div class="box4">
+            This div is using relative positioning4
+        </div>
+
     </div>
 
 </body>
