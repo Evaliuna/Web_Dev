@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --nav-bg-color: #333;
+            --nav-text-color: white;
+            --container-bg-color: #f4f4f4;
+            --container-text-color: #333;
+        }
+
+        /* this root selector is used to define global css variables*/
+
+        .nav {
+            background-color: var(--nav-bg-color);
+            color: var(--nav-text-color);
+            padding: 15px;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .container {
+            background-color: var(--container-bg-color);
+            color: var(--container-text-color);
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        /*media query to change the variable values for smaller screens*/
+        /* @media not/only mediatype and expressions{
+            css code
+        } */
+
+        @media screen and (orientation: portrait) {
+            :root {
+                --nav-bg-color: #f50b0b;
+                --nav-text-color: #ff0;
+                --container-bg-color: #e0e0e0;
+                --container-text-color: #000;
+            }
+        }
+
+        @media screen and (orientation: landscape) {
+            :root {
+                --nav-bg-color: #14f300;
+                --nav-text-color: white;
+                --container-bg-color: #f4f4f4;
+                --container-text-color: #333;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            :root {
+                --nav-bg-color: #555;
+                --nav-text-color: #fff;
+                --container-bg-color: #e0e0e0;
+                --container-text-color: #000;
+            }
+
+            .nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .container {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, deserunt, amet cumque porro minus odio
+        iure vitae illo quasi unde culpa dignissimos nam aperiam necessitatibus? Deleniti quam eum sunt iusto rerum
+        velit enim natus consequatur, tenetur, ducimus repudiandae. Eligendi provident dolorum molestiae ipsam enim
+        deleniti!
+    </div>
+</body>
+
+</html>
