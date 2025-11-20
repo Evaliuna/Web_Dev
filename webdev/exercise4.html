@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor NavBar</title>
+    <style>
+        :root {
+            --primary-color: #ad5afacc;
+            --text-color: white;
+            --secondary-color: #d8a1ffcc;
+        }
+
+        body {
+            background-color: var(--secondary-color);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 20px 10px;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 20px;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bolder;
+        }
+
+        @media screen and (max-width: 600px) {
+            :root {
+                --primary-color: #97f385cc;
+                --text-color: rgb(179, 67, 67);
+                --secondary-color: #4ba57bcc;
+            }
+        }
+
+        /* @media screen and (orientation: landscape) {
+            :root {
+                --primary-color: #ff4931cc;
+                --text-color: white;
+                --secondary-color: hsla(34, 100%, 54%, 0.8);
+            }
+        } */
+
+        @media screen and (orientation: portrait) {
+            :root {
+                --primary-color: #14b2b8cc;
+                --text-color: rgb(250, 247, 247);
+                --secondary-color: #2babc2cc;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
