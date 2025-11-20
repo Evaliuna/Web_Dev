@@ -192,6 +192,47 @@
             background-color: lightpink;
             z-index: -1;
         }
+
+        img {
+            float: right;
+        }
+
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3) {
+            clear: right;
+        }
+
+        .cards * {
+            color: rgb(182, 61, 61);
+        }
+
+        [data-color="primary"] {
+            padding-top: 10px;
+        }
+
+        /* p,a, .box[data-color="primary"]{
+            padding-top: 10px;
+        } */
+        /* .box:nth-child(odd){
+            background-color: blue;
+        } */
+        div:before {
+            content: "Eva is fine";
+        }
+
+        div::selection {
+            color: aqua;
+        }
+
+        /* to make modern website float and clear must not used*/
     </style><!-- internal CSS -->
 
     <link rel="stylesheet" href="styles.css"><!-- external CSS -->
@@ -252,6 +293,42 @@
         <div class="box4">
             This div is using relative positioning4
         </div>
+
+    </div>
+    <div class="cards">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjPJw-I5Lsq9gihC38RbkK6Uo4CCU8zsEtDU2QP3IKMXh8y8RA8VSCK64&s"
+            alt="" width="230px">
+        <div class="card">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus blanditiis quia,
+            necessitatibus explicabo dolores fugit laudantium dolor. Necessitatibus, doloribus error, dolorem natus nam
+            ab ipsam hic nostrum atque deserunt eum. Quaerat tenetur nam eum at asperiores facere voluptates hic a,
+            repellendus impedit explicabo.</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempore tempora alias quidem
+            laboriosam. Nulla labore sint cum vel corporis voluptatem, quam dolor quas iste magni facere ipsam amet
+            recusandae voluptatum voluptas maiores! Fugit, reprehenderit quasi, ratione sunt cum nisi cumque
+            consequuntur esse qui aliquam reiciendis recusandae totam. Minima tempore reprehenderit aspernatur
+            voluptatibus facilis tempora odit, vel provident ipsa quibusdam quidem praesentium officiis fugit harum
+            voluptatem a beatae impedit nisi iure. Asperiores, quisquam maxime consequatur consequuntur fuga non quod a
+            ex, tenetur sapiente rem et. Quisquam, doloremque! Reiciendis, minus cupiditate commodi fugiat eum iusto
+            ipsa voluptate quaerat veniam quia nisi in dolorem aut cum sit excepturi repudiandae, nemo mollitia?
+            Possimus reprehenderit iste nihil tenetur libero recusandae assumenda a odio accusamus, distinctio modi
+            consequuntur perferendis expedita esse! Omnis tempore ex at nihil quas ea nobis nostrum ducimus, dolorem
+            recusandae iste adipisci provident architecto, iusto quasi cum magni quibusdam doloremque illo porro. Magnam
+            distinctio accusamus sed vel dolorum autem suscipit quos fuga in, voluptas, exercitationem illum
+            perspiciatis soluta repellendus architecto quis pariatur! Voluptatibus saepe natus dolorum excepturi amet
+            sed cumque hic nihil voluptatem libero distinctio est asperiores aliquam repellat aut nam quidem provident
+            iusto obcaecati, officiis laborum atque placeat quae eligendi. Minima quisquam impedit aliquid itaque.
+            Doloremque illo quis quas dolorem optio fugiat atque aliquid, iure ratione corrupti officiis, dicta quisquam
+            quod, commodi voluptates. Debitis voluptas culpa doloremque, temporibus suscipit, magni quibusdam ut sed
+            omnis nulla sit odio. Molestias beatae amet magni eveniet laudantium doloremque minima molestiae eos
+            aspernatur odio recusandae explicabo qui nulla nesciunt numquam, corrupti voluptatem maxime fugit sed
+            laboriosam tempore deserunt facilis omnis eum. Officia qui modi distinctio, maxime culpa suscipit
+            consequatur possimus debitis atque blanditiis cum dolorum accusantium ratione, asperiores, excepturi totam.
+            Explicabo quas doloremque consequuntur? Debitis in sit laudantium eos odio recusandae ad, est maxime sint
+            quo porro laboriosam eaque molestias cupiditate tempore enim facere ullam, praesentium, neque voluptatum.
+            Quis voluptatem at itaque ratione inventore tempora in consectetur praesentium id tempore accusantium
+            corrupti, nulla commodi unde mollitia sequi velit dolorem.</div>
+        <div data-color="primary" class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium,
+            expedita!</div>
 
     </div>
 
