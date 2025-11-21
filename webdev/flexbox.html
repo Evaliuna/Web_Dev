@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: flex;
+            height: 80vh;
+            justify-content: space-around;
+            /*horizontally*/
+            align-items: center;
+            /*vertically */
+            flex-direction: column;
+            flex-direction: column-reverse;
+
+        }
+
+        .item {
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color: blueviolet;
+        }
+
+        .container2 {
+            border: 2px solid black;
+            display: flex;
+            height: 80vh;
+            justify-content: space-between;
+            /*horizontally*/
+            align-items: flex-end;
+            /*vertically */
+
+        }
+
+        .item2 {
+            /* flex-grow: 1; */
+            /*flex-grow by default 0 , here 1 means each item will take equale space by taking full width*/
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color: blueviolet;
+        }
+
+        .item1 {
+            /* flex-grow: 2; */
+            /*it will take 2 item place*/
+            flex-shrink: 2;
+            /*it can srink upto 2*/
+            align-self: flex-start;
+        }
+
+        .container3 {
+            border: 2px solid black;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            /*horizontally*/
+            /* align-items: center; */
+            /* for multiple lines we will use align content */
+            align-content: center;
+            flex-wrap: wrap-reverse;
+            flex-flow: row row-reverse;
+            overflow: scroll;
+            /*vertically */
+
+        }
+
+        .item3 {
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color: blueviolet;
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div class="container2">
+            <div class="item2 item1"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+            <div class="item2"></div>
+        </div>
+        <div class="container3">
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3 order-1">67890</div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+            <div class="item3"></div>
+        </div>
+
+    </main>
+</body>
+
+</html>
