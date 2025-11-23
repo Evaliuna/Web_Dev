@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 40vh;
+        }
+
+        .box {
+            background-color: aqua;
+            width: 5vw;
+            height: 4vh;
+            transition-property: background-color, transform;
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(1, 0.26, 0.36, 0.74);
+            transition-delay: 1s;
+            cursor: pointer;
+            /* animation: loopTranslate 4s cubic-bezier(1, 0.26, 0.36, 0.74) 1s infinite alternate; */
+        }
+
+        .translate {
+            transform: translateX(10vw) translateY(10vw) scale(2);
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container">
+            <div class="box" id="box"></div>
+        </div>
+        <script>
+            // toggle the translate class when the box is clicked
+            document.getElementById('box').addEventListener('click', function () {
+                this.classList.toggle('translate');
+            });
+        </script>
+</body>
+
+</html>
