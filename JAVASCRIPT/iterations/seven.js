@@ -1,0 +1,15 @@
+const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const newNums = myNumbers.map( (num) => {
+    return num + 9
+})
+
+console.log(newNums)
+
+//chaining
+
+const newNum = myNumbers
+                    .map( (num) => num * 10 )
+                    .map( (num) => num + 1 )//value from prev chain it work with
+                    .filter( (num) => num >= 40 )// this will execute after the 2nd map value come
+                    
